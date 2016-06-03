@@ -1,0 +1,411 @@
+/************************************************* HEADER ******************************************************************/
+
+.navbar-inverse {
+    background-color: black;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    float: none;
+}
+
+.navbar-inverse .navbar-nav > li {
+    height: 100%;
+    min-width: 20%;
+    color: white;
+    text-align: center;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: red;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: red;
+}
+
+.container>.navbar-header,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container-fluid>.navbar-collapse {
+    margin-left: 5px;
+}
+
+.blue {
+    width: 100%;
+    background-color: #418bca;
+}
+
+.lang-panel {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+.lang-panel1 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+.lang-panel2 {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 1;
+}
+
+.lang-panel1 .lang,
+.lang-panel2 .lang {
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
+.lang-panel1 .active,
+.lang-panel2 .active {
+    box-shadow: inset 0 0 2px #fff;
+}
+
+.logo {
+    display: block;
+    font-family: Georgia, Times New Roman, Times, serif;
+    text-align: center;
+    color: black;
+    line-height: 1;
+}
+
+.logo-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.info-line {
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    font-size: 16px;
+    padding-left: 20px;
+    line-height: 1;
+    text-align: center;
+}
+
+.header-item {
+    display: inline-block;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    max-height: 80px;
+    cursor: pointer;
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+.header-item:last-child {
+    border-right: none;
+}
+
+.header-item a:hover {
+    color: #fff;
+}
+
+.header-item img {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header-item a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/************************************************* MAIN ******************************************************************/
+
+.first_line {
+    margin-left: 20px;
+    color: #0066FF;
+    font-weight: bold;
+}
+
+.phone_line {
+    text-align: center;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.map-img {
+    margin: 20px auto;
+    max-height: 294px;
+    max-width: 1360px;
+}
+
+.shift {
+    margin-bottom: 20px;
+}
+
+.articles {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.name-article {
+    margin-top: 60px;
+}
+
+.arc-img {
+    float: left;
+    margin: 0px 20px 55px 0px;
+}
+
+.more:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.ya-share2 {
+    margin-bottom: 14px;
+}
+
+.note-content-layout {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+table.etapi {
+    line-height: 14px !important;
+    font-size: 13px;
+    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+}
+
+
+/************************************************* PRICE TABLE ******************************************************************/
+
+.spoilerbutton {
+    display: block;
+    margin: 5px 0;
+}
+
+.spoiler {
+    overflow: hidden;
+}
+
+.spoiler > div {
+    -webkit-transition: all 0.2s ease;
+    -webkit-transition: margin 0.2s ease;
+    transition: margin 0.2s ease;
+}
+
+.price-header {
+    display: block;
+    padding: 10px;
+    -o-box-shadow: 0px 0px 10px 0px #000000;
+    box-shadow: 0px 0px 10px 0px #000000;
+    background: #418bca;
+    font-weight: bold;
+    text-align: center;
+}
+
+.price-header:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.spoilerbutton[name="Show"] + .spoiler > div {
+    margin-top: -500%;
+}
+
+.spoilerbutton[name="Hide"] + .spoiler {
+    padding: 5px;
+}
+
+.spoilerbutton[name="Hide"] > .price-header {
+    -o-box-shadow: inset 0px 0px 5px 0px #000000;
+    box-shadow: inset 0px 0px 5px 0px #000000;
+}
+
+.price-table {
+    width: 100%;
+}
+
+.price-table tr {
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.price-table tr:nth-child(2n) {
+    background: #f5f5f5;
+}
+
+.price-table tr th {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.price-table tr th:nth-child(2),
+.price-table tr td:nth-child(2) {
+    width: 20%;
+    text-align: center;
+}
+
+.price-table tr td {
+    padding: 10px;
+}
+
+
+/************************************************* SIDE ******************************************************************/
+
+.block {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 10px 0;
+    list-style: none;
+    box-shadow: inset 0 0 10px #c4c5c5;
+    margin-bottom: 20px;
+}
+
+.block-title {
+    color: #005965;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.block1 li {
+    font-weight: 700;
+    font-size: 13px;
+    display: block;
+    background: #418bca;
+    margin: 15px;
+    padding: 5px;
+    color: white;
+}
+
+.block2 li {
+    text-align: left;
+    font-size: 13px;
+    margin: 10px 15px;
+    padding: 5px;
+    padding-left: 25px;
+}
+
+.icon_info {
+    font-weight: bold;
+    background: url(../images/icons/info.jpg) 0 10px no-repeat;
+}
+
+.icon_phone {
+    background: url(../images/icons/phone.jpg) 0 5px no-repeat;
+}
+
+.icon_email {
+    color: #5a99ca;
+    background: url(../images/icons/mail.jpg) 0 7px no-repeat;
+}
+
+.icon_icq {
+    font-weight: bold;
+    color: #5e9253;
+    background: url(../images/icons/icq.jpg) 0 5px no-repeat;
+}
+
+.icon_skype {
+    font-weight: bold;
+    color: #657983;
+    background: url(../images/icons/skype.jpg) 0 5px no-repeat;
+}
+
+.counter {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/************************************************* FOOTER ******************************************************************/
+
+footer {
+    background: #F5F5F5;
+}
+
+.bottomnav {
+    width: 100%;
+    background: #000;
+}
+
+.bottomnav ul li {
+    display: inline-block;
+}
+
+.bottomnav ul li a {
+    color: #fff;
+    padding: 0px 10px;
+    margin: 5px 0;
+}
+
+.bottomnav ul li a:hover,
+.bottomnav ul li a:active,
+.bottomnav ul li a:visited,
+.bottomnav ul li a:link {
+    background: none;
+}
+
+.rights {
+    padding-top: 5px;
+    margin: auto;
+}
+
+
+/************************************************* MEDIA ******************************************************************/
+
+@media screen and (max-width: 767px) {
+    .lang-panel1 {
+        display: none;
+    }
+    .lang-panel2 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .lang-panel1 {
+        display: block;
+    }
+    .lang-panel2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .note-content-layout {
+        display: none;
+    }
+}
